@@ -58,9 +58,9 @@ body {
 
 .map-overlay {
     position: relative;
-    bottom: -35rem;
+    bottom: -14rem;
     /* right: auto; */
-    left: 20rem;
+    left: 2rem;
     background: #fff;
     margin-right: 20px;
     font: .9em/.4em 'Open Sans', sans-serif;
@@ -70,18 +70,6 @@ body {
     z-index: 100;
 }
 
-.map-overlay-2 {
-    position: relative;
-    bottom: 22rem;
-    /* right: auto; */
-    left: 59rem;
-    background: #fff;
-    margin-right: 10px;
-    font: .9em/.4em 'Open Sans', sans-serif;
-    overflow: auto;
-    border-radius: 3px;
-    text-align: left;
-}
 
 #legend {
     padding:  0em 1em 0em;
@@ -260,6 +248,10 @@ body {
       padding-bottom: 2em;
       font-size: 18px;
       
+  }
+
+  .img-container {
+    text-align: center;
   }
 
 
