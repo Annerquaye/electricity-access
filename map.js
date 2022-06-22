@@ -5,9 +5,13 @@ mapboxgl.accessToken =
   container: "map",
   style:  "mapbox://styles/annerquaye/cl4kmaep3001r15mrdcppenn7",
   zoom: 1.15,
-    maxZoom: 10,
+    maxZoom: 4,
     minZoom: 1,
     center: [3.158, 24.797],//[10.108, 35.221],
+    // maxBounds: [
+    //   [-180, 15],
+    //   [-30, 72],
+    // ],
   projection: "naturalEarth",
 });
 
@@ -76,6 +80,7 @@ map.on('load', function () {
 //Create the popup
 
 map.on('click', 'power-access', function (e) {
+  console.log("clicked...");
   var countryName = e.features[0].properties.Entity;
   var powerAccess = e.features[0].properties.Access;
     powerAccess = powerAccess.toFixed(1);
